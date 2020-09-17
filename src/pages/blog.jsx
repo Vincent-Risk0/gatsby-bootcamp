@@ -1,11 +1,14 @@
 //DATE : 9/17/20
 
-import React, { useState } from "react"
+import React from "react"
+import Layout from "../components/Layout"
 
-const blog = () => {
+const BlogPage = () => {
   return (
-    <div className={"blog"}>
-    </div>
+    <Layout className={"blog"}>
+      <h1>Blog</h1>
+      <p>Posts will show up here later</p>
+    </Layout>
   )
 }
-export default blog
+export default BlogPage

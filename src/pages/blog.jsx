@@ -4,6 +4,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import blogStyles from "./blog.module.scss"
+import Head from "../components/Head"
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -33,6 +34,7 @@ const BlogPage = () => {
 
   return (
     <Layout className={"blog"}>
+      <Head title={"Blog"} />
       <h1>Blog</h1>
 
       <ul className={blogStyles.posts}>{renderPosts}</ul>

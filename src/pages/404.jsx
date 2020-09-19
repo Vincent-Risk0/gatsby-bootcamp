@@ -1,8 +1,19 @@
 //DATE : 9/19/20
 
-import React, { useState } from "react"
+import React from "react"
+import { Link } from "gatsby"
+import Layout from "../components/Layout"
+import Head from "../components/Head"
 
 const NotFound = () => {
-  return <div className={"404"}></div>
+  return (
+    <Layout>
+      <Head title={"404"} />
+      <h1>Page not found</h1>
+      <p>
+        <Link to={"/"}>Head Home</Link>
+      </p>
+    </Layout>
+  )
 }
-export default 404
+export default NotFound

@@ -2,6 +2,8 @@ html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    filter:invert(1);
+    background: white;
 }
 body {
     margin: 0;
@@ -219,6 +221,7 @@ img {
     padding-right: 0;
     padding-top: 0;
     margin-bottom: 1.45rem;
+    filter: invert(1);
 }
 h1 {
     margin-left: 0;
